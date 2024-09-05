@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.btnn{
+    color: #33d4d6;
+    background-color: transparent;
+   border:1px solid #33d4d6;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  font-style: normal;
+    
+}
+/* Ensure the submenu is hidden by default */
+.slicknav_nav .submenu {
+  display: none;
+}
+
+/* Show the submenu when it's not hidden */
+.slicknav_nav .submenu:not(.hidden) {
+  display: block;
+}
+
+.color{
+    background-color: #33d4d6;
+}
+.color:hover{
+    background-color: transparent;
+    border: 1px solid #33d4d6;
+    color: #33d4d6;
+}
+#navigation{
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  font-style: normal;
+    
+}
+li:hover{
+    color: #33d4d6;
+}
+
+.btnn:hover{
+    background-color: #33d4d6;
+    color: #fff;
+}
+.header-area {
+    position: relative;
+    
+  }
+  
+ .overlay-about {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55vh;
+    background-color: #1a1a37;
+    opacity: 0.8; /* Blue overlay with 50% opacity */
+    z-index: 1;
+  }
+  .overlay-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55vh;
+    background-color: #1a1a37;
+    opacity: 0.8; /* Blue overlay with 50% opacity */
+    z-index: 1;
+  }
+  
+  .header-area > *:not(.overlay) {
+    position: relative;
+    z-index: 2;
+  }
+  /* 7a838b */
+
+  /* Base styles for navbar */
+.main-menu, .appointment {
+  display: flex;
+}
+
+.mobile-menu {
+  display: none; /* Hide mobile menu by default */
+}
+
+/* Media query for screens smaller than 15 inches */
+@media screen and (max-width: 1280px) {
+  .main-menu {
+    display: none; /* Hide main menu on smaller screens */
+  }
+
+  .mobile-menu {
+    display: block; /* Show mobile menu on smaller screens */
+  }
+
+  /* Adjust mobile menu styles */
+  .slicknav_nav {
+    display: block;
+    position: absolute;
+    top: 60px; /* Adjust based on menu height */
+    left: 0;
+    background: white;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .slicknav_btn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .slicknav_icon-bar {
+    background: #fff;
+    height: 2px;
+    width: 20px;
+    margin: 4px 0;
+  }
+
+  .slicknav_nav li {
+    margin: 0;
+  }
+}

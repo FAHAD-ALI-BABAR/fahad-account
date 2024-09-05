@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.work-sec {
+    background-color: #f5fffb;
+    padding: 40px 20px; /* Added padding for better spacing */
+}
+
+.work-divs {
+    width: 100%;
+    height: auto; /* Allow height to be flexible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.apply {
+    width: 20%;
+    height: 28vh;
+    text-align: center; /* Center text for better layout */
+}
+
+.num {
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: #DDF0FF;
+    color: #0A8CFF;
+    text-align: center;
+    line-height: 72px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.apply h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    color: #040e27;
+    margin-top: 10px;
+}
+
+.apply p {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #7a838b;
+    margin-top: 10px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .apply {
+        width: 40%; /* Increase width for better spacing on tablets */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .apply h2 {
+        font-size: 22px; /* Slightly smaller font size */
+    }
+
+    .apply p {
+        font-size: 14px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .work-divs {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .apply {
+        width: 90%; /* Take up most of the screen width */
+        margin-bottom: 20px; /* Add spacing between stacked elements */
+    }
+
+    .apply h2 {
+        font-size: 20px; /* Smaller font size for mobile */
+    }
+
+    .apply p {
+        font-size: 14px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .apply {
+        width: 100%; /* Full width for small screens */
+        margin-bottom: 15px; /* Smaller spacing for compact layout */
+    }
+
+    .apply h2 {
+        font-size: 18px; /* Smaller font size for smaller screens */
+    }
+
+    .apply p {
+        font-size: 13px;
+    }
+
+    .num {
+        width: 60px; /* Smaller circle for small screens */
+        height: 60px;
+        line-height: 60px;
+        font-size: 14px;
+    }
+}

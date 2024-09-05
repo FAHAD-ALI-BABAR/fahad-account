@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.choose-us {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px; /* Added padding to prevent content from touching screen edges */
+}
+
+.choose-pic {
+    height: 70vh;
+    width: 30%;
+}
+
+.choose-text {
+    height: 60vh;
+    width: 30%;
+}
+
+.choose-text h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 44px;
+    color: #001d38;
+    text-align: center;
+}
+
+.choose-text p {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #7a838b;
+    text-align: justify;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.choose-text ul {
+    list-style-type: disc;
+    margin-left: 30px;
+    margin-top: 50px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    line-height: 30px;
+    color: #040e27;
+}
+
+.choose-text li::marker {
+    color: #33d4d6;
+}
+
+.choose-text ul li:hover {
+    cursor: pointer;
+    color: #040e27;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .choose-pic, .choose-text {
+        width: 45%; /* Increase width for better spacing on tablets */
+    }
+
+    .choose-text h2 {
+        font-size: 36px; /* Slightly smaller font size */
+    }
+
+    .choose-text p {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .choose-text ul {
+        margin-left: 20px;
+        font-size: 16px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .choose-us {
+        flex-direction: column; /* Stack elements vertically */
+        height: auto; /* Allow height to be flexible */
+    }
+
+    .choose-pic, .choose-text {
+        width: 90%; /* Take up most of the screen width */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .choose-text h2 {
+        font-size: 28px; /* Smaller font size for mobile */
+    }
+
+    .choose-text p {
+        font-size: 14px;
+        margin-left: 0; /* Remove unnecessary margin */
+    }
+
+    .choose-text ul {
+        margin-left: 20px;
+        margin-top: 30px; /* Reduced margin for better spacing */
+        font-size: 16px;
+    }
+
+    .sldier_btn {
+        text-align: center; /* Center button on mobile screens */
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .choose-text h2 {
+        font-size: 24px; /* Smaller font size for smaller screens */
+    }
+
+    .choose-text p {
+        font-size: 13px;
+    }
+
+    .choose-text ul {
+        font-size: 14px;
+        margin-left: 10px; /* Adjust for smaller screens */
+    }
+}

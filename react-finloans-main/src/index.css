@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .custom-list {
+      list-style-type: none; /* Remove default list markers */
+      padding-left: 0; /* Remove default padding */
+    }
+  
+    .custom-list li {
+      position: relative; /* Make the li element a positioning context */
+      padding-left: 2rem; /* Add space for the custom marker */
+    }
+  
+    .custom-list li::before {
+      content: ""; /* Create the pseudo-element */
+      position: absolute; /* Position it absolutely within the li */
+      left: 0; /* Align it to the left of the li */
+      top: 0.25rem; /* Adjust the vertical alignment */
+      width: 0.75rem; /* Set width of the circle */
+      height: 0.75rem; /* Set height of the circle */
+      border: 2px solid #f97316; /* Orange border */
+      background-color: white; /* White background */
+      border-radius: 50%; /* Make it a circle */
+    }
+  }

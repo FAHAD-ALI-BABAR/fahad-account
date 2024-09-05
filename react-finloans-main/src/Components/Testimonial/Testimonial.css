@@ -1,0 +1,103 @@
+/* Default Styles */
+.testimonial {
+    width: 60%;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.forward, .backward {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #DDF0FF;
+    color: #0A8CFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.forward:hover, .backward:hover {
+    background: #b8e0ff;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .testimonial {
+        width: 80%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .testimonial img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .testimonial div {
+        margin-left: 0;
+        margin-top: 15px;
+        max-width: 100%;
+    }
+
+    .forward, .backward {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .testimonial {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .testimonial img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .testimonial div {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .forward, .backward {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .testimonial {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .testimonial img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .testimonial div {
+        text-align: center;
+    }
+
+    .forward, .backward {
+        width: 35px;
+        height: 35px;
+    }
+}

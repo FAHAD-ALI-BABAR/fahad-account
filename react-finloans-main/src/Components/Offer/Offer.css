@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.service_area {
+    height: 95vh; /* Keep as is */
+
+}
+
+.line {
+    border: 1px solid #33d4d6;
+    margin-top: 80px; /* Keep as is */
+    width: 3%; /* Keep as is */
+    margin-left: 48%; /* Center align for larger screens */
+}
+
+.offer-text {
+    text-align: center;
+    margin-top: 10px; /* Keep as is */
+}
+
+.offer-text h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 44px; /* Keep as is */
+    color: black;
+}
+
+.offer-text p {
+    color: #7a838b;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px; /* Keep as is */
+}
+
+.cards {
+    height: 70vh; /* Keep as is */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.home, .car, .education {
+    border-radius: 5px;
+    border: none;
+    width: 40vh; /* Keep as is */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 70vh; /* Keep as is */
+    background: -webkit-linear-gradient(top, #0a8cff 0%, #054680 100%);
+}
+
+.home-head {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid gray;
+}
+
+.home-head img {
+    height: 90px; /* Keep as is */
+    margin-left: 120px;
+    margin-top: 40px;
+    color: #fff;
+}
+
+.home-head h5 {
+    margin-left: 120px;
+    font-size: 20px; /* Keep as is */
+    font-family: "Roboto", sans-serif;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.home-head h2 {
+    margin-left: 90px;
+    font-size: 26px; /* Keep as is */
+    font-family: "Roboto", sans-serif;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #33d4d6;
+}
+
+.home-info ul {
+    list-style-type: disc;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 18px; /* Keep as is */
+    font-family: "Roboto", sans-serif; 
+    line-height: 30px; /* Keep as is */
+    color: #fff;
+}
+
+.home-info li::marker {
+    color: #33d4d6; /* Keep as is */
+}
+
+.loan-icon {
+    filter: invert(100%) brightness(1000%);
+}
+
+.home-info ul li:hover {
+    cursor: pointer;
+    color: white;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .service_area{
+        height: 180vh;
+    }
+    .line {
+        width: 20%; /* Adjust width for smaller screens */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .offer-text h2 {
+        font-size: 32px; /* Adjust font size for smaller screens */
+    }
+
+    .offer-text p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .cards {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center;
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .home, .car, .education {
+        width: 90%; /* Adjust width for smaller screens */
+        max-width: 400px; /* Set max width for better fit */
+        height: auto; /* Adjust height for smaller screens */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .home-head img {
+        height: 60px; /* Adjust height for smaller screens */
+    }
+
+    .home-head h5 {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .home-head h2 {
+        font-size: 22px; /* Adjust font size for smaller screens */
+    }
+
+    .home-info ul {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .line {
+        width: 30%; /* Further adjust width for extra small screens */
+    }
+
+    .offer-text h2 {
+        font-size: 24px; /* Further adjust font size for extra small screens */
+    }
+
+    .offer-text p {
+        font-size: 12px; /* Further adjust font size for extra small screens */
+    }
+
+    .home-head img {
+        height: 50px; /* Adjust height for extra small screens */
+    }
+
+    .home-head h5 {
+        font-size: 16px; /* Adjust font size for extra small screens */
+    }
+
+    .home-head h2 {
+        font-size: 20px; /* Adjust font size for extra small screens */
+    }
+
+    .home-info ul {
+        font-size: 14px; /* Adjust font size for extra small screens */
+    }
+
+    .cards {
+        gap: 10px; /* Adjust gap for extra small screens */
+    }
+}

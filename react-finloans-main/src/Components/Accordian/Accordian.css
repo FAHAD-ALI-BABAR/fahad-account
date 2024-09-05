@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+.acc-sec {
+    width: 100%;
+    height: auto; /* Change height to auto to allow flexibility */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.acc-pic {
+    width: 50%;
+    height: 80vh;
+    padding: 10px; /* Add padding for better spacing on large screens */
+}
+
+.acc-pic img {
+    width: 100%;
+    height: 100%; /* Ensure the image covers the container */
+    object-fit: cover; /* Make sure the image covers the space nicely */
+}
+
+.acc-info {
+    width: 50%;
+    height: auto; /* Change height to auto for flexibility */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.acc-info h2 {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px; /* Reduced font size for better scaling */
+    color: #040e27;
+    font-weight: 600;
+}
+
+.acc-info span {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    color: #040e27;
+    font-weight: 500;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .acc-pic, .acc-info {
+        width: 100%; /* Take full width on tablets */
+        height: auto; /* Adjust height automatically */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .acc-info h2 {
+        font-size: 32px; /* Reduce font size */
+        padding-left: 10px; /* Adjust padding */
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .acc-sec {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .acc-pic, .acc-info {
+        width: 100%; /* Full width on mobile */
+        height: auto; /* Adjust height automatically */
+    }
+
+    .acc-info h2 {
+        font-size: 28px; /* Reduce font size for mobile */
+        padding: 10px; /* Adjust padding */
+        text-align: center; /* Center text on mobile */
+    }
+
+    .acc-info span {
+        font-size: 14px; /* Smaller font size */
+        text-align: center; /* Center text on mobile */
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .acc-sec {
+        padding: 10px; /* Less padding on small screens */
+    }
+
+    .acc-info h2 {
+        font-size: 24px; /* Smaller font size for small screens */
+        padding: 5px; /* Less padding */
+        text-align: center; /* Center text */
+    }
+
+    .acc-info span {
+        font-size: 13px; /* Smaller font size */
+        text-align: center; /* Center text */
+    }
+}
